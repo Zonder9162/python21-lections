@@ -107,10 +107,10 @@ string[10] # 'd'
 string[5] # ' '
 
 # срезы - подстрока строки
-string[0;5] # 'hello
-string[0;6] # 'hello '
-string[2;4] # 'll'
-string[0;5][2;4] # 'll'
+# string[0;5] # 'hello
+# string[0;6] # 'hello '
+# string[2;4] # 'll'
+# string[0;5][2;4] # 'll'
 
 string[:5] # 'hello'
 string[6:] # 'world'
