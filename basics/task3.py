@@ -27,19 +27,18 @@
 
 # Task 3
 
-# username = input('Введите юзернейм: ')
-# middle = int(len(username) / 2)
-# password = (username[:middle] + '&' + username[middle:] + '$').swapcase()
-# print(f'Вам сгенерирован пароль:{password}')
-
-# string = input()
-# print(string[1::2])
-
-# string = input()
-# print(string[:5] + 'K' + string[6:])
+username = input('Введите юзернейм: ')
+middle = int(len(username) / 2)
+password = (username[:middle] + '&' + username[middle:] + '$').swapcase()
+print(f'Вам сгенерирован пароль:{password}')
 
 string = input()
-print(string.replace(string[5], 'K', 6))
+print(string[1::2])
+
+string = input()
+print(string[:5] + 'K' + string[6:])
+
+
 
 
 
