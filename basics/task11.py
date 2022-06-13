@@ -19,4 +19,4 @@
 # else:
 #     print(count)
 
-print((1, 2, 3) < (1, 2, 4))
+print(7 % 0)
