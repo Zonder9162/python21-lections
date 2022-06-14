@@ -198,26 +198,34 @@
 
 # Калькулятор
 
-a = int(input('Введите первое число: '))
-b = int(input('Введите второе число: '))
-c = input('Выберите операцию из следующих "+-*/%**//": ')
-if c == '+':
-    print(a + b)
-elif c == '-':
-    print(a - b)
-elif c == '*':
-    print(a * b)
-elif c == '**':
-    print(a ** b)
-elif b != 0:
-    if c == '/':
-        print(a / b)
-    elif c == '%':
-        print(a % b)
-    elif c == '//':
-        print(a // b)
-else:
-    print('Данной операции нет в системе')
+# a = {'a': 1, 'b': 2, 'c': 1}
+# print(list(a.keys()))
 
+# a = {'a': 1, 'b': 2, 'c': 1}
+# a.items()
+# for x, y in a: 
+#      print(x, y)
+
+# a = {'a': None, 'b': 1, 'c': 2, 'd': None, 'e': 3}
+
+# for k, v in list(a.items()):
+#     if v == None:
+#         del a[k]   
+# print(a)
+
+a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
+for x, y in list(a.items()):
+    a[y] = y / 5
+print(a)
+
+# from collections import defaultdict
+
+# a = {'a': 1, 'b': 2, 'c': 3} 
+# for x, y in list(a.items()):
+#     y[y].append(x)
+# print(a)
+
+a = {'a': 3, 'b': 2}
+print(sum(a.values()))
 
 
