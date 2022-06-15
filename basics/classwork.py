@@ -213,19 +213,129 @@
 #         del a[k]   
 # print(a)
 
-a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
-for x, y in list(a.items()):
-    a[y] = y / 5
-print(a)
+# a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
+# for x, y in list(a.items()):
+#     a[y] = y / 5
+# print(a)
 
 # from collections import defaultdict
 
 # a = {'a': 1, 'b': 2, 'c': 3} 
 # for x, y in list(a.items()):
-#     y[y].append(x)
 # print(a)
 
-a = {'a': 3, 'b': 2}
-print(sum(a.values()))
+# a = {'a': 3, 'b': 2}
+# print(sum(a.values()))
 
+# Task 1
+
+# str_numbers = input('Введите цифры через запятую: ').split(', ')
+# int_numbers = []
+# for number in str_numbers:
+#     int_numbers.append(int(number))
+# print(int_numbers[0], int_numbers[-1])
+# str_numbers.pop()
+# str_numbers.append('makers')
+# print(str_numbers)
+
+# Task 2
+# import random
+# numbers = random.sample(range(0, 10), k = 10)
+# print(numbers)
+# print(sorted(numbers))
+
+# Task 3 
+# list_ = input('Введите слова через запятую: ').split(', ')
+# numbers = []
+# for words in list_:
+#     numbers.append(int(len(words)))
+# print(list_)
+# print(numbers)
+
+# name_of_friends = ['Альфа', 'Бета', 'Омега', 'Гамма']
+# while name_of_friends:
+#     print(name_of_friends[0])
+#     del name_of_friends[0]
+
+# name_of_list = ['Helloworld!']
+
+# half_length = int((len(name_of_list[0])) // 2)
+
+# chast1 = name_of_list[0][:half_length]
+
+# chast2 = name_of_list[0][half_length:]
+
+# if int(len(name_of_list[0])) % 2 != 0:
+#     half_length = int(len(chast1)) + 1
+
+# new_chast1 = name_of_list[0][0:half_length]
+
+# new_chast2 = name_of_list[0][half_length:]
+
+# new_list = new_chast2 + new_chast1
+
+# print(list(new_list))
+   
+# labels = ['Honda', 'Kawasaki']
+# for i in labels:
+#     print(f'I like brand {i}')
+
+# list_ = ['world', 'hello'] 
+# list_.reverse()
+# new_list = list_
+# print(new_list)
+
+# nums = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# res = list(filter(lambda x: x < 5, nums))
+# print(res)
+
+# x = input().split(', ')
+# list_ = list(x)
+# tuple_ = tuple(x)
+# print(list_)
+# print(tuple_)
+
+# list_ = [1, 2, 3, 4, 5]
+# new_list = []
+# for i in list_:
+#     new_list.append(str(i))
+# print(new_list)
+
+# list_ = [1, 2, 3, 4, 5]
+# new_list = []
+# for i in list_:
+#     if i % 2 == 0:
+#         new_list.append('четное')
+#     else:
+#         new_list.append('нечетное')
+# print(new_list)
+
+# list_ = [1, 1, 3]
+# for i in list_:
+#     if list_.count(i) < 1:
+#         x = 'ERROR'
+#     else:
+#         y = 'yes'
+# if list_.count(random(list_)) > 0:
+#     print('yes')
+# else:
+#     print('ERROR')
+
+# x = list(range(84, 9184))
+# list_ = []
+# for i in x:
+#     if i % 5 == 0:
+#         list_.append(i)
+# print(list_)
+
+list_ = [1,2,3]
+if list_.count(list_[0]) > 1 or list_.count(list_[1]) > 1:
+    print('yes')
+elif list_.count(list_[2]) > 1:
+    print('yes')
+else:
+    print('ERROR')
+
+
+    
 
