@@ -214,9 +214,7 @@
 # print(a)
 
 # a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
-# for x, y in list(a.items()):
-#     a[y] = y / 5
-# print(a)
+# a
 
 # from collections import defaultdict
 
@@ -226,6 +224,11 @@
 
 # a = {'a': 3, 'b': 2}
 # print(sum(a.values()))
+
+# a = {'a': 1, 'b': 2, 'c': 1}
+# a.items()
+# for x, y in list(a.items()): 
+#      print(y)
 
 # Task 1
 
@@ -328,14 +331,80 @@
 #         list_.append(i)
 # print(list_)
 
-list_ = [1,2,3]
-if list_.count(list_[0]) > 1 or list_.count(list_[1]) > 1:
-    print('yes')
-elif list_.count(list_[2]) > 1:
-    print('yes')
-else:
-    print('ERROR')
+# list_ = [1,2,3]
+# if list_.count(list_[0]) > 1 or list_.count(list_[1]) > 1:
+#     print('yes')
+# elif list_.count(list_[2]) > 1:
+#     print('yes')
+# else:
+#     print('ERROR')
 
 
-    
+# list_ = [n for n in range(1, 50, 2)] 
+# print(list_) 
 
+# list_ = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+# int_list = [i for i in list_ if i % 2 == 0 and i > 0]
+# print(int_list)
+
+# list_ = [item ** 2 for item in range(1,26)]
+# print(list_)
+
+# str_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+# int_list = [int(i) for i in str_list]
+# print(int_list)
+
+# list_ = [(i ** 2) if i % 2 == 0 else i for i in range(1, 11)]
+# print(list_)
+
+# list_ = [True if i % 2 == 0 else False for i in range(1, 11)]
+# print(list_)
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ]
+# new_list = ['shorter' if len(i) <= 4 else 'longer' for i in list_name]
+# print(new_list)
+
+# dict_ = {i : i**2 for i in range(1, 11)}
+# print(dict_)
+
+# a = {'apple': 0.40, 'orange': 0.35, 'banana': 0.25} 
+# for x, y in a.items(): 
+#     y = y / 5
+#     a.update[{x : 3}]
+# print(a)
+
+# a = {'a': 1, 'b': 2, 'c': 3} 
+# for x, y in list(a.items()):
+#     a.update({y : x})
+#     a.pop(x)
+# print(a)
+
+# a = {'a': 1, 'b': 4, 'c': 1, 'd': 5, 'e': 6} 
+# b = {}
+# for k, v in list(a.items()):
+#     if v % 2 == 0:
+#         b.update({k : 2})
+#     else:
+#         b.update({k : v})
+# print(b)
+
+# a1 = {1 : 'Hello', 2 : 'World'}
+# a2 = dict([(1, 2), ('Hello', 'World')])
+# a3 = dict.fromkeys(['Hello', 'World'], 1)
+# print(a1)
+# print(a2)
+# print(a3)
+
+# string = "Hello" 
+# dict_ = {}
+# for i in string:
+#     if string.count(i) > 1:
+#         dict_.update({i:string.count(i)})
+#     else:
+#         dict_.update({i:1})
+
+# print(dict_)
+# from functools import reduce
+# a = {'a': 10, 'b': 9, 'c': 3}
+# result = [v for k,v in list(a.items())]
+# print(reduce(lambda x, y: x*y, result))
