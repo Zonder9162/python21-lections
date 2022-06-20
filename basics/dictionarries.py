@@ -82,10 +82,34 @@ dict1.pop("не существующий ключ") # KeyError
 # del dict1
 
 # метод popitem удаляет  ив возвращает последнюю пару
-зкште(dict.popitem()) # (4, "e")
+print(dict.popitem()) # (4, "e")
 print(dict1)
 
 
 a = {'x': 1, 'y': 2, 'z': 1}
 b = list(a.keys(['x']))
 print(b)
+
+d = {
+    'хлеб':25,
+    'молоко':55,
+    'сыр':115
+}
+
+d[key]
+d.get[key]
+d.keys() # все ключи
+d.values() # все значения
+d.items() # и ключи и значения
+d.pop(key) # значение
+
+user = {
+    'email':'example@gmail.com',
+    'password':'password',
+    'password':'password'
+}
+
+p1 = user.get('password')
+p2 = user.pop('password')
+
+d = {1:1, 2:2, 3:3} 

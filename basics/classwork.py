@@ -408,3 +408,135 @@
 # a = {'a': 10, 'b': 9, 'c': 3}
 # result = [v for k,v in list(a.items())]
 # print(reduce(lambda x, y: x*y, result))
+
+# n = int(input())
+# dict_ = {
+#     n*i : (n*i)*(n*i)
+#     for i in range(1, 501) 
+#     if i % i == 0 and n*i <= 500
+# }
+# print(dict_)
+
+# a = {'a': 1, 'b': 5, 'c': 4, 'd': 3}
+# dict_ = {
+#     key : list(range(1, value + 1))
+#     for key, value in a.items() 
+# }
+# print(dict_)
+
+# dict_ = {'first': 1, 'second': 2, 'third': 3} 
+# a = {
+#     key : ('even' if value % 2 == 0 else 'odd')
+#     for key, value in dict_.items()
+# }
+# print(a)
+
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'.split(' ')
+# list_ = [
+#     i for i in string_ if i.isdigit()
+# ]
+# print(list_)
+
+# dict_ = {
+#     'Timur': {'history': 90, 'math': 95, 'literature': 91},
+
+#     'Olga': {'history': 92, 'math': 96, 'literature': 81},
+ 
+#     'Nik': {'history': 84, 'math': 85, 'literature': 87}
+# }
+# new_dict = {
+#     key : {inner_key for inner_key, inner_value in value.items() if max(inner_value)}
+#     for key, value in dict_.items()
+# }
+# print(max(list(dict_.items())[2][1]))
+# print(max(list(dict_.items())[list(dict_).index('Timur')][1]))
+# print(new_dict)
+# print(max(list(dict_.items())[list(dict_).index('Olga')][2]))
+# max(list(dict_.items())[list(dict_).index(key)][1].values())
+
+# dict_ = {
+#     'Timur': {'history': 90, 'math': 95, 'literature': 91},
+ 
+#     'Olga': {'history': 92, 'math': 96, 'literature': 81},
+ 
+#     'Nik': {'history': 84, 'math': 85, 'literature': 87}
+#     }
+# new_dict = {
+#     key:
+#     list(({inner_key for inner_key, inner_value in value.items() if inner_value == max(list(value.values()))}))[0]
+#     for key, value in dict_.items()
+#     }
+# print(new_dict)
+
+
+# new_dict = {
+#     key : max(list(dict_.items())[1][2])
+#     for key, value in dict_.items()
+# }
+# print(max(list(dict_.items())[0][1]))
+# print(max({'history': 90, 'math': 9, 'literature': 91}.values()))
+
+# Task 1
+
+# names = ['Winston', 'Bill', 'Ann', 'Emma']
+# letters = ['a', 'o', 'i', 'e', 'y', 'u']
+
+# filter = [name for name in names if name[0].lower() in letters]
+# print(filter)
+
+# Task 2
+
+# a = {'Sam': {'math': 95, 'literature': 88}, 'Alice': {'math': 70, 'literature': 98}}
+# b = {key: {inner_key: inner_value + 2 for inner_key, inner_value in value.items()} for key, value in a.items()}
+# print(b)
+
+# Task 3
+
+# list_ = list(range(1, 11))
+# set_ = {num ** 2 if num % 2 == 0 else num * 3 for num in list_}
+# print(set_)
+
+# input_ = list(input('input : '))
+# letters = ['a', 'o', 'i', 'e', 'y', 'u']
+# output_ = [len(let) for let in input_ if let in letters]
+# print(f'output : {sum(output_)}')
+
+# my_dict = {'first': {'a': 1}, 'second': {'b': 2}} 
+# dict_ = {
+#     key : list({inner_value for inner_key, inner_value in value.items()})[0] for key, value in my_dict.items()
+# } 
+# print(dict_)
+
+# dict_ = {1 : 'hello', 2 : 'wonderful', 3 : 'world'}
+# dict_ = {
+#     key : (len(value) if key % 2 == 0 else len(value) ** 3)
+#     for key, value in dict_.items()
+# }
+# print(dict_)
+
+# set1 = [i for i in range(10)]
+# set2 = [i for i in range (8,18)]
+# ful_set = set1 + set2
+
+# set1 = {i for i in range(10)}
+# set2 = {i for i in range(8,18)}
+# full_set = set.union(set1,set2)
+# num = len(full_set)
+# same_letter = len(set.intersection(set1, set2))
+
+# if num < 20:
+#     print(f'В этом сете было {same_letter} повторения, его длина составляет {num}')
+# else:
+#     print("Ваш обьединенный сет полностью уникальный!")
+
+# same_letter = {
+    
+# }
+
+# print(len(set.intersection(set1, set2)))
+
+ b = 10
+ c = 11
+ print(a)
+
+
