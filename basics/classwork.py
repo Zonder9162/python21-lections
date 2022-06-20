@@ -535,8 +535,72 @@
 
 # print(len(set.intersection(set1, set2)))
 
- b = 10
- c = 11
- print(a)
+# try:
+#     age = int(input())
+#     if age < 18:
+#         raise ValueError
+# except ValueError:
+#     print('Доступ запрещён')
+#     print('Введён некорректный возраст')
+# else:
+#     print('Спасибо')
+# finally:
+#     print('До свидания!')
 
+# try:
+#     num1 = int(input())
+#     num2 = int(input())
+#     print(num1 / num2)
+# except ZeroDivisionError:
+#     print('Произошла ошибка!')
+# except ValueError:
+#     print('Произошла ошибка!')
+
+# inp1 = input()
+# inp2 = input()
+# try:
+#     if int(inp1) != int() or int(inp2) != int():
+#         print(inp1 + inp2)
+# except:
+#     print(int(inp1)) + int(inp2)
+
+# inp1 = input()
+# inp2 = input()
+
+# try:
+#     print(int(inp1) + int(inp2))
+# except:
+#     print(inp1 + inp2)
+
+# inp1 = list(input().split(', '))
+# list_ = []
+# for i in inp1:
+#     if int(i) == int():
+#         list_.append(i)
+#     else:
+#         raise Exception('Данный элемент не является числом!')
+
+# dict_ = {1:'Alfa', 2:'Beta', 3:'Gamma'}
+# dict_ = {value: key for key, value in dict_.items()}
+
+# try:
+#     username = input('Введите имя пользователя: ')
+#     ID = dict_[username]
+#     print(ID)
+# except KeyError:
+#     print('В базе данных нет такого пользователя.')
+# else:
+#     print(f'Добро пожаловать, {username}!')
+# finally:
+#     print('Спасибо!')
+
+try:
+    age = int(input('Введите Ваш возраст: '))
+    if age <= 0:
+        raise Exception('Ваш возраст должен быть больше 0')
+except ValueError:
+    print('Введите число, не строку')
+else:
+    print(f'Ваш возраст: {age}')
+    
 
