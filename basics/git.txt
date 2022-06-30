@@ -6,3 +6,5 @@ git push origin master   - закидываем версию в github
 git rm --cached 'file.exe
 git ommit -m file.exe
 git push
+
+git clone SSH-ссылка   -   копируем репозиторий с github (можно чужой)

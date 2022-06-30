@@ -226,17 +226,115 @@
 #     print(list_)
 # menshe_semi(a)
 
-main_matryoshka = 5
-def size():
-    global main_matryoshka
-    medium_matryoshka = 4
-    sum_matryoshka = main_matryoshka +  medium_matryoshka
-    def full_size():
-        nonlocal sum_matryoshka
-        little_matryoshka = 3
-        full_sum_matryoshka = sum_matryoshka + little_matryoshka 
-        print(full_sum_matryoshka)
-    full_size()
-size()
+# main_matryoshka = 5
+# def size():
+#     global main_matryoshka
+#     medium_matryoshka = 4
+#     sum_matryoshka = main_matryoshka +  medium_matryoshka
+#     def full_size():
+#         nonlocal sum_matryoshka
+#         little_matryoshka = 3
+#         full_sum_matryoshka = sum_matryoshka + little_matryoshka 
+#         print(full_sum_matryoshka)
+#     full_size()
+# size()
 
+# import math
+# class Solution:
+#     def mySqrt(x: int):
+#         return int(math.sqrt(x))
+#     print(mySqrt(8))
 
+#     list_ = [1, 5, -9, 6, -4] 
+# result = all(num > 3 for num in list_) 
+# print(result)
+
+# list_ = [-1, 0, 45, -24, 78]
+# result = any(num < 0 for num in list_)
+# print(result)
+
+# list_ = [-1, 0, 45, -24, 78]
+# result = any(num < 0 for num in list_)
+# print(result)
+
+# list_ = [1, 2, 3, 4]  
+# result = list(map(lambda x: x ** 2, list_)) 
+# print(result) 
+
+# list_ = [1, 2, 3, 4]  
+# result = list(filter(lambda x: x % 2 == 0, list_)) 
+# print(result) 
+
+# list_ = ['inheritance', 'solid', 'polymorphism', 'dry', 'yagni',] 
+# result = list(filter(lambda string: len(string)>7, list_)) 
+# print(result) 
+
+# import functools 
+# list_ = [5, 6, 7, 8] 
+# result = functools.reduce(lambda x, y: x * y, list_) 
+# print(result) 
+
+# list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] 
+# list2 = len(list(filter(lambda x: x % 2 == 0,list_)))
+# list3 = len(list(filter(lambda x: x % 2 != 0,list_)))
+# result = f'even: {list2}, odd: {list3}'
+# print(result) 
+
+# list_ = [-1, 2, 3, 5, -3, 7] 
+# result = list(map(lambda x: True if (x > 0) else False, list_))
+# print(result)
+
+# import functools 
+# list_ = ['Paul', 'George', 'Ringo', 'John'] 
+# result = functools.reduce(lambda x, y: x if len(x)>len(y) else y, list_)
+# print(result)
+
+# Task 1
+
+# import math
+
+# list_ = [1, 4, 64 , 9, 'Hello world', True, 25, 36, False, 'Python']
+# result = list(map(lambda x: round(math.sqrt(x)), filter(lambda y: type(y) == int, list_)))
+# print(result)
+
+# Task 2
+
+# dict_ = [
+#     {'name' : 'Alfa', 'grade' : 100},
+#     {'name' : 'Beta', 'grade' : 80},
+#     {'name' : 'Gamma', 'grade' : 40},
+#     {'name' : 'Omega', 'grade' : 40}
+# ]
+
+# list_of_exclusion = list(filter(lambda x: x['grade'] < 60, dict_))
+# names_of_exclusion = list(map(lambda x: x['name'], list_of_exclusion))
+# grade_of_exclusion = list(map(lambda x: x['grade'], list_of_exclusion))
+# zipped_of_exclusion = list(zip(names_of_exclusion, grade_of_exclusion))
+
+# explusion_list = list(map(lambda x: f'{x[0]}, Вы будете исключены.', zipped_of_exclusion))
+
+# print(explusion_list)
+
+# word_in_list =  ['H', 'l', 'l', 'o', 'w', ' ', 'W', 'o', 'r', 'l', 'd', '!'] 
+# import functools 
+# complex_word = functools.reduce(lambda x, y: x + y, word_in_list) 
+# print(complex_word) 
+
+# a = {'a': 1, 'b': 4, 'c': 1, 'd': 5, 'e': 6} 
+# b = {
+#     key:
+#     2 if value % 2 == 0 else value
+#     for key, value in a.items()
+# }
+# print(b)
+
+list_ = list(range(10000, 100000))
+for i in list_:
+    if i % 2 == 0:
+        i = str(i)
+        number = 0
+        for j in i:
+            number = number+int(j)
+        if number%4 == 0:
+            if (str(i))[2] in '13579':
+                print(i)
