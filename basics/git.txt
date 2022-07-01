@@ -1,4 +1,5 @@
 git init   - создаем git репозиторий из текущей папки
+git remote add название ssh-ссылка  -  сохраняем ssh-ссылку в переменную
 git add .   - просто пишем эту комманду каждый раз перед commit
 git commit -m 'message'   - создаем новую версию
 git push origin master   - закидываем версию в github
@@ -8,3 +9,4 @@ git ommit -m file.exe
 git push
 
 git clone SSH-ссылка   -   копируем репозиторий с github (можно чужой)
+git log - посмотреть все коммиты
