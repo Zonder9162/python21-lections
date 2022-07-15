@@ -27,7 +27,8 @@ class Views:
                 f"Тип кузова - {i['body_type']}",
                 f"Пробег - {i['mileage']}",
                 f"Цена - {i['price']}",
-                f"Лайки - {i['likes']}\n",
+                f"Лайки - {i['likes']}",
+                f"Комментарии - {i['comments']}\n",
             )))
 
     def retrieve():
@@ -49,7 +50,8 @@ class Views:
                         f"Тип кузова - {i['body_type']}",
                         f"Пробег - {i['mileage']}",
                         f"Цена - {i['price']}",
-                        f"Лайки - {i['likes']}\n",
+                        f"Лайки - {i['likes']}",
+                        f"Комментарии - {i['comments']}\n",
                     )))
         else: 
             print('В базе данных нет такого ID')
@@ -117,4 +119,6 @@ class Views:
         if num_choice_auto in list_:
             name = str(input('Введите своё имя: '))
             comment = str(input('Напишите комментарий: '))
-            Cars.info['']
+            Cars.info[num_choice_auto]['comments'].append(f'{name}: {comment}')
+        else:
+            print('В базе данных нет такого ID')

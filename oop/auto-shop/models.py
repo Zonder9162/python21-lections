@@ -15,7 +15,7 @@ class Cars:
         self.mileage = mileage
         self.price = price
         likes = 0
-        comment = ''
+        comment = []
 
         if body_type in Cars.body_types:
             self.body_type = body_type
