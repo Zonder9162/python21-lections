@@ -6,14 +6,14 @@ class Cars:
     objects = []
     body_types = ['седан', 'универсал', 'купе', 'хэтчбек', 'минивен', 'внедорожник', 'пикап']
     
-    def __init__(self, brand, model, year, engine_volume, color, body_type, mileage, price):
+    def __init__(self, brand:str, model:str, year:int, engine_volume:float, color:str, body_type:str, mileage:int, price:float):
         self.brand = brand
         self.model = model
         self.year = year
-        self.engine_volume = engine_volume
+        self.engine_volume = round(engine_volume, 1)
         self.color = color
         self.mileage = mileage
-        self.price = price
+        self.price = round(price, 2)
         likes = 0
         comment = []
 
